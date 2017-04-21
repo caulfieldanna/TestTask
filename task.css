@@ -1,0 +1,55 @@
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px; 
+}
+
+table {
+	border-collapse: collapse;
+	position: relative;
+  	overflow: hidden;
+  	width: auto;
+	height: auto;
+}
+
+td {
+  border: 1px solid black;
+  width: 60px;
+}
+
+td:hover {
+  background-color: #FFCD00;
+}
+
+td:before {
+  	display: block;
+	content: '';
+	width: 42px;
+	height: 42px;
+	background-color: #0063EF;
+	border-radius: 50%;
+	margin: 7px;
+}
+
+td:hover:before {
+  background: #000;
+}
+
+td:hover:after {
+	content: '';
+	position: absolute;
+	background-color: #FFE581;
+	width: inherit;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+}
+
+tr:hover {
+  background-color: #FFE581;
+}
